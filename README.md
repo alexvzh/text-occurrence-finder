@@ -15,6 +15,8 @@ It works concurrently across files and safely skips unreadable (binary) files.
 
 ---
 
+
+
 ## Requirements
 
 - Java 17 or newer  
@@ -29,3 +31,19 @@ Run the program directly with Gradle:
 
 ```bash
 ./gradlew run --args="/path/to/directory searchString"
+```
+
+## Testing
+
+The project uses **JUnit 5** and **kotlinx-coroutines-test** for unit testing.  
+All tests are located in `src/test/kotlin/SearchTests.kt`.
+
+To run all tests from the command line:
+
+```bash
+./gradlew test
+```
+
+
+
+
